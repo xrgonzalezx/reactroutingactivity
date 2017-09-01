@@ -8,17 +8,17 @@ import registerServiceWorker from './registerServiceWorker';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 //IMPORT COMPONENTS
-import Menu from './components/Menu';
 import About from './components/About';
-import Find from './components/Findus';
-import BaseLayout from './components/Layout';
+import Heros from './components/Heros';
+import Contact from './components/Contact';
+import BaseLayout from './components/BaseLayout';
 
 ReactDOM.render(
   <BrowserRouter>
     <BaseLayout>
       <Switch>
-        <Route path="/findus" component={Find} />
-        <Route path="/menu" component={Menu} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/menu" component={Heros} />
         <Route path="/" component={About}/>
       </Switch>
     </BaseLayout>

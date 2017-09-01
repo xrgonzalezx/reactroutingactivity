@@ -20,7 +20,7 @@ nav{
   box-shadow:  rgba(0, 0, 0, 0.22) -2px 9px 5px 0px;
 }
 .headings {
-  font-family: Arizonia;
+  font-family: Times;
   font-size: 80px;
 }
 .sub-headings {
@@ -29,7 +29,7 @@ nav{
 .primary-text{
   font-size: 125%;
   line-height: 3rem;
-  font-family: Raleway;
+  font-family: Times;
   color: #DEDDDD;
 }
 .fa {
