@@ -6,17 +6,25 @@ class Heros extends Component {
 
   render() {
 
-    let aboutStyle = {
+    let steveStyle = {
   "backgroundImage": "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/grouppic.jpg)",
   "backgroundSize": "cover",
   "textShadow": "2px 2px 2px black",
   "height": "100%",
   "padding": "100px"
 }
+
+let brineStyle = {
+"backgroundImage": "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/cats.jpg)",
+"backgroundSize": "cover",
+"textShadow": "2px 2px 2px black",
+"height": "100%",
+"padding": "100px"
+}
     return (
       <div className="app-body offset col-lg-10 col-lg-offset-1">
         <h2 className="col-lg-offset-2 headings">Minecraft Heros</h2>
-        <section className="row" style= {aboutStyle}>
+        <section className="row" style= {steveStyle}>
         <article className="col-lg-5">
           <h2 className="headings">
             Hero Steve
@@ -25,7 +33,7 @@ class Heros extends Component {
           <p className="primary-text">Steve is the main protagonist of the famous video game Minecraft. Very little is known about Steve and who or what it is, where it orignated from, what its goal is, and if its even human. </p>
         </article>
       </section>
-      <section className="row" style= {aboutStyle}>
+      <section className="row" style= {brineStyle}>
       <article className="col-lg-5">
         <h2 className="headings">
           Herobrine
