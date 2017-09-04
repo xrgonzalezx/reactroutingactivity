@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 // IMPORT LINK
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
  class BaseLayout extends Component {
   render(){
@@ -35,22 +36,28 @@ import { Link } from 'react-router-dom';
             <div className="navbar-header">
               <ul className="nav navbar-nav">
                 <li style={navTitle}>
-                  <div><button className="btn"><Link to="/">Home</Link></button></div>
+
+                   <NavLink activeClassName="selected" className="nav-link" exact to="/">Home</NavLink>
                 </li>
                 <li>
-                  <div><button className="btn"><Link to="/about">About</Link></button></div>
+
+                  <NavLink activeClassName="selected" className="nav-link" to="/about">About</NavLink>
                 </li>
                 <li>
-                  <div><button className="btn"><Link to="/heros">Heros</Link></button></div>
+
+                  <NavLink activeClassName="selected" className="nav-link" to="/heros">Heros</NavLink>
                 </li>
                 <li>
-                  <div><button className="btn"><Link to="/contact">Contact</Link></button></div>
+
+                    <NavLink activeClassName="selected" className="nav-link" to="/contact">Contact</NavLink>
                 </li>
                 <li>
-                  <div><button className="btn"><Link to="/portfolio">Portfolio</Link></button></div>
+
+                  <NavLink activeClassName="selected" className="nav-link" to="/portfolio">Portfolio</NavLink>
                 </li>
                 <li>
-                  <div><button className="btn"><Link to="/references">References</Link></button></div>
+
+                  <NavLink activeClassName="selected" className="nav-link" to="/references">References</NavLink>
                 </li>
               </ul>
             </div>
